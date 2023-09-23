@@ -1,31 +1,91 @@
 .app-footer {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  background: #0073fa;
-  color: #fff;
-  text-align: center;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 600;
+    color: #fff;
+    padding: 32px 113px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111827;
+    @media only screen and (max-width: 767px) {
+        flex-direction: column;
+        padding: 32px 16px;
+        align-items: start;
+    }
+}
+
+.app-footer-text-wrapper {
+    width: 233px;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: 767px) {
+        margin-bottom: 24px;
+    }
+}
+
+.app-footer-company-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.app-footer-company-address {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.app-footer-text {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: auto;
+}
+
+.app-header-wrapper {
+    background: #fff;
+    color: #000000;
+    box-shadow: 0px 10px 15px -3px #0000001A;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    @media only screen and (max-width: 767px) {
+        height: 60px;
+    }
+}
+
+.app-logo {
+    @media only screen and (max-width: 767px) {
+        width: 30px;
+    }
 }
 
 .app-header {
-  background: #0073fa;
-  color: #fff;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 113px;
+    @media only screen and (max-width: 767px) {
+        padding: 0 18px;
+    }
 }
-.app-header img {
-  height: 50px;
-}
+
 .app-header span {
-  font-size: 30px;
-  font-weight: 600;
+    font-size: 30px;
+    font-weight: 600;
+    @media only screen and (max-width: 767px) {
+        font-size: 24px;
+    }
+}
+
+p,
+h1,
+hr {
+    margin: 0;
+}
+
+.Mui-disabled {
+    background-color: #93C5FD !important;
+    color: white !important;
 }
