@@ -33,6 +33,7 @@ const CarImage = styled.div<{ src: string }>`
 `;
 const PriceText = styled.p`
   font-size: 14px;
+  font-weight: 500;
 `;
 const ButtononAdjust = styled.button`
   background: #3b82f6;
@@ -46,15 +47,16 @@ const ButtononAdjust = styled.button`
   cursor: pointer;
 `;
 const InputCount = styled.input`
-  font-weight: bold;
+  font-size: 24px;
   height: 31px;
   text-align: center;
+  color: #000000;
   background-color: #ffff;
   border: none;
   width: 30px;
   margin: 0 16px;
   @media only screen and (max-width: 767px) {
-    margin: 0 8px;
+    font-size: 20px;
   }
 `;
 const ButtonRow = styled.div`

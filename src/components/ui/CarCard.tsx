@@ -35,6 +35,7 @@ const CarTitle = styled.p`
 `;
 const PriceText = styled.p`
   font-size: 14px;
+  font-weight: 500;
 `;
 const AddButton = styled(Button)`
   width: 100%;
