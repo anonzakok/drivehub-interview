@@ -13,6 +13,9 @@ const Wrapper = styled.div`
   width: 100%;
   min-height: 80vh;
   margin-top: 80px;
+  @media only screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 `;
 const HeaderWrapper = styled.div`
   display: flex;
@@ -46,7 +49,6 @@ const CarListWrapper = styled.div`
   }
 `;
 const FilterWrapper = styled.div`
-  width: 30%;
   display: flex;
   gap: 20px;
   @media only screen and (max-width: 767px) {

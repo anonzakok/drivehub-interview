@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const CardWrapper = styled.div`
   width: 305px;
-  height: 340px;
+  min-height: 340px;
   border-radius: 16px;
   display: flex;
   background-color: #ffffff;
@@ -26,7 +26,7 @@ const CarImage = styled.div<{ src: string }>`
 const DetailWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 5px 16px 16px;
+  padding: 16px;
   gap: 8px;
 `;
 const CarTitle = styled.p`

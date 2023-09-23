@@ -13,7 +13,7 @@
 }
 
 .app-footer-text-wrapper {
-    width: 233px;
+    width: 250px;
     gap: 4px;
     display: flex;
     flex-direction: column;
@@ -74,6 +74,7 @@
 .app-header span {
     font-size: 30px;
     font-weight: 600;
+    text-transform: uppercase;
     @media only screen and (max-width: 767px) {
         font-size: 24px;
     }

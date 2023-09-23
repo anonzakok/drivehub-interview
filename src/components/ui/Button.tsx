@@ -12,16 +12,14 @@ interface IButtonProps {
 
 const StyledButtonText = styled.p`
   width: "max-content";
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1;
   text-transform: unset;
-  @media only screen and (max-width: 767px) {
-    font-size: 18px;
-  }
 `;
 const StyledButton = styled(Button)`
   height: 56px !important;
   text-transform: unset !important;
+  border-radius: 8px !important;
 `;
 
 const CustomButton: FC<IButtonProps> = ({
