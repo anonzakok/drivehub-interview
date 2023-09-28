@@ -40,8 +40,6 @@ const App = () => {
     (id: string, title: string, price: number, photo: string) => (): void => {
       const cartList = cart;
       const duplicate = cartList.car_list.findIndex((s) => s.carId === id);
-      console.log(duplicate);
-      console.log(title);
       if (duplicate !== -1) {
         cartList.car_list[duplicate].carTotal += 1;
         cartList.cart.total += price;

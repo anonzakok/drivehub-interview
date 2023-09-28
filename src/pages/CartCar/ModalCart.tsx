@@ -91,8 +91,13 @@ const ModalCart: FC<IModalCartProps> = ({
       cartList.car_list[index].carTotal += 1;
       cartList.cart.total += cartList.car_list[index].carPrice;
     } else if (action === "dec") {
-      cartList.car_list[index].carTotal -= 1;
-      cartList.cart.total -= cartList.car_list[index].carPrice;
+      if (cartList.car_list[index].carTotal === 1) {
+        cartList.cart.total -= cartList.car_list[index].carPrice;
+        cartList.car_list.splice(index, 1);
+      } else {
+        cartList.car_list[index].carTotal -= 1;
+        cartList.cart.total -= cartList.car_list[index].carPrice;
+      }
     }
     setCart({
       ...cart,

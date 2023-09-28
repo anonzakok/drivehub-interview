@@ -103,7 +103,6 @@ const CartCarItem: FC<IItemCartProps> = ({ item, index, onAdjustItem }) => {
             />
             <ButtononAdjust
               onClick={onAdjustItem(index, "dec")}
-              disabled={item.carTotal === 1}
             >
               <Minus />
             </ButtononAdjust>
