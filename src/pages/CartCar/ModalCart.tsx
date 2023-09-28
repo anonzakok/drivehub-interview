@@ -134,8 +134,9 @@ const ModalCart: FC<IModalCartProps> = ({
           <Line />
           <TotalItem>
             <TotalTitle>{"Grand Total"}</TotalTitle>
-            <TotalValue>{`${(
-              cart.cart.total - cart.cart.discount
+            <TotalValue>{`${(cart.cart.total - cart.cart.discount <= 0
+              ? 0
+              : cart.cart.total - cart.cart.discount
             ).toLocaleString()} THB`}</TotalValue>
           </TotalItem>
         </TotalWrapper>
